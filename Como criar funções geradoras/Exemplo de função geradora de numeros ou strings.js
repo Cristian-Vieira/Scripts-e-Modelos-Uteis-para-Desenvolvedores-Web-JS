@@ -12,7 +12,7 @@ console.log(gerador.next().value); // 2
 console.log(gerador.next().value); // 3
 
 
-// Funções geradoras tambem podem gerar outros tipos de valores alem de numeros, como por exemplo strings, objetos, booleanos ou até estruturas de dados mais complexas.
+// Funções geradoras também podem gerar outros tipos de dados alem de numeros, como por exemplo strings, objetos, booleanos ou até estruturas de dados mais complexas.
 //Exemplo com strings:
 
 function* gerador_strings() {
