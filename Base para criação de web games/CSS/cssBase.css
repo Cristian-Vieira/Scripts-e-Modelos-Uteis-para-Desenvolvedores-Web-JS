@@ -1,0 +1,21 @@
+body {
+    background: grey;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#canvas {
+    width: 63%; /* width recebe um valor em porcentagem no css para manter sua forma em diferentes tamanhos de tela */
+    border: 1px solid black;
+    background-color: black;
+}
+
+/* Div para centralizar o canvas no meio da tela */
+#divcanvas { 
+    display: flex;
+    justify-content: center;
+}
