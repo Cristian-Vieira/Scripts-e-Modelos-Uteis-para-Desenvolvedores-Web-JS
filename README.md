@@ -1,2 +1,4 @@
-# Scripts e modelos uteis para web dev
- Nese repositorio irei colocar scripts em JS e modelos que podem ser úteis no futuro, irei atualizar conforme for aprendendo mais coisas.
+# Scripts e Modelos Úteis para Desenvolvedores Web
+#### Neste repositório, vou compartilhar scripts JS e modelos HTML e CSS que podem ser úteis no futuro. Vou atualizá-los à medida que aprender mais coisas.
+
+Sinta-se à vontade para usar este repositório como quiser! ❤️
