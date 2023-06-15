@@ -2,7 +2,7 @@
 function somarPares(...nums) {
     let sum = 0; //Variavel para armazenar o valor da soma
   
-    let pares = nums.filter(x => x % 2 == 0); // Metodo filter cria uma nova array com apenas os numeros pares que vieram como parâmetros
+    let pares = nums.filter(x => x % 2 == 0); // Metodo filter testa os elementos usando a condição (x % 2 == 0), atribuido a nova array somente os que passam no teste
     pares.map(numsFiltrados => sum += numsFiltrados); // Metodo map() pega todos os elementos da array "pares" e soma com a variavel "sum"
   
     /*
