@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/mainStyle.css">
+        <title>Modelo de formulario de login e registro</title>
+    </head>
+    <body>
+        <h2>Modelo de formulario de login e registro</h2>
+
+        <div id="divBotoes">
+            <button id="btnEntrar">Entrar</button>
+            <button id="btnRegistro">Registre-se</button>
+        </div>
+            <!-- Modal login -->
+        <div id="modalLogin" class="modal">
+            <form class="modal-content animate" action="/action.php" method="post">
+                <div class="imgcontainer">
+                    <span id="btnFecharLogin" class="btnFechar" title="Fechar login">&times;</span>
+                    <img src="./images/icon.png" alt="Avatar" class="avatar">
+                </div>
+
+                    <div class="container">
+
+                        <label for="usrName">
+                            <b>Nome do Usuario</b> 
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="usrName" required>
+
+                        <label for="senha"> 
+                            <b>Senha</b> 
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="senha" required>
+
+                        <div id="divBotoes"> 
+                            <button type="submit">
+                                Entrar
+                            </button>
+                        </div>
+
+                        <label> 
+                            <input type="checkbox" checked="checked" name="lembrarDeMim"> Lembrar de mim
+                        </label>
+                        <div class="container container-alin-center">
+                            <span class="fgtSenha"> 
+                                <a href="#"> Esqueceu a senha? </a>
+                            </span>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </div>
+
+         <!--Formulario de registro -->  
+        <div id="modalregistro" class="modal">
+            <form class="modal-content animate" id="formRegister" onsubmit="return validarFormRegistro()" >
+                <div class="imgcontainer">
+                    <span id="btnFecharRegistro" class="btnFechar" title="Fechar registro">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <div id="modalTitle">Inscrever-se</div>
+                    <p> Por favor, preencha este formulario para criar uma conta. </p> <hr>
+                    <label for="email"> 
+                        <b>Email</b> 
+                    </label>
+                    <input type="text" placeholder="Enter Email" name="email" required id="inputEmail">
+
+                    <label for="senha"> 
+                        <b>Senha</b> 
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="senha" required id="inputSenha1">
+                    <label for="senha-repeat">
+                        <b>Repita a senha</b> 
+                    </label>
+                    <input type="password" placeholder="Repeat Password" name="senha-repeat" required id="repetirSenha">
+                    <p> Ao Inscrever-se você esta concordando com os <a href="#" id="termos">Termos e Privacidade</a> </p>
+                    <p>
+                        <div id="divBotoes">
+                            <button type="submit" class="signup" value="Registrar">Inscrever-se</button>
+                            <button type="button" id="cancelBtn" class="cancelbtn">Cancelar</button>
+                        </div>
+                    </p>
+
+                </div>
+            </form>
+          </div>
+
+
+        <script src="./javaScript/abrir_FecharModais.js"></script>
+        <script src="./javaScript/validarEmail_Senha.js"></script>
+    </body>
+</html>
