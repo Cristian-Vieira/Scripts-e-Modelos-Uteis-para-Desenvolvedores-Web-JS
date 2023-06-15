@@ -1,0 +1,51 @@
+Eventos manipulação DOM:
+
+onclick: Ocorre quando um elemento é clicado.
+ondblclick: Ocorre quando um elemento é clicado duas vezes em um curto espaço de tempo.
+onmouseover: Ocorre quando O usuário move o mouse sobre um elemento HTML
+onmouseout: Ocorre quando o cursor do mouse sai de um elemento.
+onkeydown: Ocorre quando uma tecla do teclado é pressionada.
+onkeyup: Ocorre quando uma tecla do teclado é liberada.
+onload: Ocorre quando um elemento é carregado.
+onunload: O navegador terminou de carregar a página.
+onsubmit: Ocorre quando um formulário é enviado.
+onreset: Ocorre quando um formulário é redefinido.
+onchange: Ocorre quando o valor de um elemento é alterado.
+onfocus: Ocorre quando um elemento recebe o foco.
+onblur: Ocorre quando um elemento perde o foco.
+onscroll: Ocorre quando um elemento é rolado.
+onselect: Ocorre quando um texto é selecionado.
+oncontextmenu: Ocorre quando o botão direito do mouse é clicado em um elemento, exibindo o menu de contexto.
+ondrag: Ocorre quando um elemento está sendo arrastado.
+ondragstart: Ocorre quando um elemento começa a ser arrastado.
+ondragend: Ocorre quando um elemento é solto após ser arrastado.
+ondragover: Ocorre quando um elemento é arrastado sobre outro elemento.
+ondragenter: Ocorre quando um elemento é arrastado para dentro de outro elemento.
+ondragleave: Ocorre quando um elemento é arrastado para fora de outro elemento.
+ondrop: Ocorre quando um elemento é solto após ser arrastado para dentro de outro elemento.
+onresize: Ocorre quando o tamanho de um elemento é alterado.
+onerror: Ocorre quando um erro ocorre ao carregar um elemento (por exemplo, uma imagem não pode ser carregada).
+oninput: Ocorre quando o valor de um elemento é alterado por um usuário ou por um script. Este evento é semelhante ao onchange, mas ocorre imediatamente após a mudança, em vez de esperar o elemento perder o foco.
+onmousemove: Ocorre quando o cursor do mouse é movido dentro de um elemento.
+onmousedown: Ocorre quando o botão do mouse é pressionado dentro de um elemento.
+onmouseup: Ocorre quando o botão do mouse é liberado dentro de um elemento.
+onselectstart: Ocorre quando um usuário começa a selecionar texto em um elemento.
+oncopy: Ocorre quando um usuário copia o conteúdo de um elemento para a área de transferência.
+oncut: Ocorre quando um usuário corta o conteúdo de um elemento para a área de transferência.
+onpaste: Ocorre quando um usuário cola conteúdo da área de transferência para um elemento.
+onfocusin: Ocorre quando um elemento recebe o foco (também conhecido como o evento focus).
+onfocusout: Ocorre quando um elemento perde o foco (também conhecido como o evento blur).
+onbeforeunload: Ocorre antes do navegador descarregar a página (por exemplo, quando o usuário fecha a guia ou o navegador).
+onhashchange: Ocorre quando a parte da URL que segue o símbolo "#" muda (ou seja, quando a âncora de uma página é alterada).
+onpopstate: Ocorre quando o histórico do navegador é alterado (por exemplo, quando o usuário clica no botão "Voltar" ou "Avançar").
+onpageshow: Ocorre quando uma página é exibida no navegador (por exemplo, quando o usuário abre uma nova guia ou janela).
+onpagehide: Ocorre quando uma página é ocultada do navegador (por exemplo, quando o usuário fecha uma guia ou janela).
+onbeforeprint: Ocorre antes de a página ser impressa.
+onafterprint: Ocorre depois de a página ser impressa.
+ontouchstart: Ocorre quando um usuário toca a tela em um dispositivo móvel ou tablet.
+ontouchmove: Ocorre quando um usuário arrasta o dedo na tela em um dispositivo móvel ou tablet.
+ontouchend: Ocorre quando um usuário remove o dedo da tela em um dispositivo móvel ou tablet.
+onorientationchange: Ocorre quando a orientação do dispositivo móvel é alterada (por exemplo, de retrato para paisagem).
+
+Lista completa https://www.w3schools.com/jsref/dom_obj_event.asp
+
