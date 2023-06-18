@@ -11,7 +11,7 @@ promessaDaLeituraDoArquivo.then((arquivo) => {
 
 }).then((arquivo) => {
 
-    return arquivo.split(";");
+    return arquivo.split(",");
 
 }).then((array) => {
     const newArr = [];
