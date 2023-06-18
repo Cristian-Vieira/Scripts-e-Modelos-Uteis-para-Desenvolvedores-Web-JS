@@ -32,3 +32,17 @@ promessaDaLeituraDoArquivo.then((arquivo) => {
     }
 
 });
+
+/*
+Retorno no console:
+
+Lista de tarefas: 
+
+Ir ao mercado > Feita
+Ir a farmacia > Não feita
+Ir ao açougue > Feita
+Lavar louça > Feita
+Limpar o chão > Não feita
+Praticar JS > Feita
+
+*/
