@@ -6,7 +6,7 @@ const filePath = path.resolve(__dirname, 'exemploListaTarefas.csv')
 const promessaDaLeituraDoArquivo = fs.promises.readFile(filePath);
 
 promessaDaLeituraDoArquivo.then((arquivo) => {
-     // Prieiro convertemos o arquivo para string, depois substituimos os valores booleanos para strings mais descritivas
+     // Primeiro convertemos o arquivo para string no formato utf-8, depois substituimos os valores booleanos para strings mais descritivas
     return arquivo.toString("utf-8").replace(/true/g, "Feita").replace(/false/g, "Não feita");
 
 }).then((arquivo) => {
