@@ -2,8 +2,8 @@
 const fs = require('fs'); // Modulo de leitura de arquivos
 const path = require('path') // Modulo para manipular arquivos e diretórios
 
-const filePath = path.resolve(__dirname, 'exemploListaTarefas.csv')
-const promessaDaLeituraDoArquivo = fs.promises.readFile(filePath);
+const filePath = path.resolve(__dirname, 'exemploListaTarefas.csv')  // Caminho para o arquivo
+const promessaDaLeituraDoArquivo = fs.promises.readFile(filePath);  // Criando promise para ler o arquivo
 
 promessaDaLeituraDoArquivo.then((arquivo) => {
      // Primeiro convertemos o arquivo para string no formato utf-8, depois substituimos os valores booleanos para strings mais descritivas
@@ -28,12 +28,12 @@ promessaDaLeituraDoArquivo.then((arquivo) => {
 
 }).then((array) => {
      // exibimos os elementos no console um em cada linha
-    console.log("Lista de tarefas: \n")
     for (const elementos of array) {
         console.log(elementos)
     }
 
 });
+console.log("\nLista de tarefas:\n")
 
 /*
 Retorno no console:
