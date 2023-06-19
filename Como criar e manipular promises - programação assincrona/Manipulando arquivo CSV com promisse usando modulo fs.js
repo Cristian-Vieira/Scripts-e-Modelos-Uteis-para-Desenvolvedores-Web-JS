@@ -15,24 +15,22 @@ promessaDaLeituraDoArquivo.then((arquivo) => {
 
 }).then((array) => {
 
-     // Criamos uma nova array e a cada elemento da array que veio como retorno unimos em um elemento da nova array
+     // Criamos uma nova array e a cada elemento da array que veio como retorno, unimos em um elemento da nova array
     const newArr = []; 
     let index = 0
-     
     for (let i = 0; i < array.length - 1; i += 2) {
         let element = array[i];
         let element2 = array[i + 1];
         newArr[index] = element + " >" + element2
-
         index++
-
     }
     return newArr
+
 }).then((array) => {
-     //exibimos os elementos no console 1 em cada linha
+     // exibimos os elementos no console um em cada linha
     console.log("Lista de tarefas: \n")
-    for (const item of array) {
-         console.log(item)
+    for (const elementos of array) {
+        console.log(elementos)
     }
 
 });
