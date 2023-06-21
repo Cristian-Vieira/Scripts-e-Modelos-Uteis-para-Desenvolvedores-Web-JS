@@ -3,36 +3,45 @@ const fs = require('fs') // Modulo de leitura de arquivos
 const path = require('path') // Modulo para manipular arquivos e diretórios
 
 const filePath = path.resolve(__dirname, 'exemploListaTarefas.csv')  // Caminho para o arquivo
-const promessaDaLeituraDoArquivo = fs.promises.readFile(filePath)  // Criando promise para ler o arquivo
 
-promessaDaLeituraDoArquivo.then((arquivo) => {
-     // Primeiro convertemos o arquivo para string no formato utf-8, depois substituimos os valores booleanos para strings mais descritivas
-    return arquivo.toString("utf-8").replace(/true/g, "Feita").replace(/false/g, "Não feita")
+async function buscarArquivo() {
 
-}).then((arquivo) => {
-     // Convertemos o retorno para uma array, separando os elementos por ","
-    return arquivo.split(",")
+    try { // Caso de sucesso da promise
 
-}).then((array) => {
+        const arquivo = await fs.promises.readFile(filePath)  // Criando promise para ler o arquivo
+        const array = arquivo.toString("utf-8").replace(/true/g, "Feita").replace(/false/g, "Não feita").split(",") // 'toString' Converte o arquivo para o formato utf-8, 'replace' substituir booleans para instruções descritivas e 'split' para converter arquivo para uma array serando elementos por ','
+        const newArr = createNewArr() // função para criar uma nova array
 
-     // Criamos uma nova array e a cada elemento da array que veio como retorno, unimos em um elemento da nova array
-    const newArr = [] 
-    let index = 0
-    for (let i = 0; i < array.length - 1; i += 2) {
-        let element = array[i]
-        let element2 = array[i + 1]
-        newArr[index] = element + " >" + element2
-        index++
+        function createNewArr() {
+            //cada elemento da 'array', unimos em um elemento da 'newArr'
+            let index = 0
+            const newArr = []
+            for (let i = 0; i < array.length - 1; i += 2) {
+                let element = array[i]
+                let element2 = array[i + 1]
+                newArr[index] = element + " >" + element2
+                index++
+            }
+            return newArr
+        }
+        // Exibimos os elementos no console um em cada linha
+        for (const elementos of newArr) {
+            console.log(elementos)
+        }
+
+
+    } catch (error) { // caso a promise retorne um erro
+        console.log("Ocorreu um erro", error);
+
+    } finally {
+        // Independente do sucesso ou erro da promise
+        //...
     }
-    return newArr
 
-}).then((array) => {
-     // exibimos os elementos no console um em cada linha
-    for (const elementos of array) {
-        console.log(elementos)
-    }
-})
+}
+buscarArquivo()
 console.log("\nLista de tarefas:\n")
+
 
 /*
 Retorno no console:
