@@ -8,7 +8,7 @@ class Animal {
         this.idade = idade + " anos"
          //...
     }
-     // A clas possui um metodo que apresenta o animal criado
+     // A class possui um metodo que apresenta o animal criado
     apresentar_se() {
         console.log(`Ola eu me chamo ${this.nome}, sou um ${this.tipo} e tenho ${this.idade}`)
     }
