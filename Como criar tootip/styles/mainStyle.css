@@ -1,6 +1,31 @@
-.box{
-    
-    display:flex;
+body {
+    background-color: rgba(3, 81, 248, 0.562);
+}
+
+.box {
+    position: fixed;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+span {
+    text-align: center;
 }
