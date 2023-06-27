@@ -1,6 +1,6 @@
 // Exemplo de sintaxe
 document.getElementById("ElementoQueQueremosOuvir").addEventListener(evento, função(), useCapture); 
-/* parametro 'useCapture' é opcional e é usado para definir como sera a propagação de eventos por Capture ou Bubbling
+/* Parametro 'useCapture' é opcional e é usado para definir como sera a propagação de eventos por Capture ou Bubbling
 A Capture desce pelo DOM.
 A Bubbling sobe pelo DOM.
 O valor deve ser um boolean por padrão é 'false', o que significa que a propagação de Bubbling é usada caso o paramtro seja omitido; 
@@ -8,7 +8,7 @@ O valor deve ser um boolean por padrão é 'false', o que significa que a propag
 
 
 // Exemplo pratico
-document.getElementById("botão1").addEventListener(click, abrirFormulario); // ATENÇÃO: Não devemos usar o prefixo "on" nos eventos, use "click" em vez de "onclick".
+document.getElementById("botão1").addEventListener(click, abrirFormulario); // ATENÇÃO: Não devemos usar o prefixo "on" nos eventos, use "click" em vez de "onclick". E a função escrita sem os parenteses "()"
 
 function abrirFormulario(){
     document.getElementById('formulario1').style.display = "block"
