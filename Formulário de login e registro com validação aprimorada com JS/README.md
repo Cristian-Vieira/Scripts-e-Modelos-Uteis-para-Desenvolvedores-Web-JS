@@ -6,6 +6,12 @@
 - Valida se o e-mail possui um formato válido, rejeitando e-mails sem o caractere '@', sem '.', e também rejeita e-mails com caracteres especiais inválidos.
 - Valida se a senha corresponde a o campo "Repita a senha", e se possui mais de 8 caracteres.
 
+### Preview do formulario:
+<p align="center">
+  <img src="./images/loginPreview.png" alt="preview image">
+  <img src="./images/registerPreview.png" alt="preview image">
+</p>
+
 ### Notas:
 - Este é apenas um modelo básico que pode ser aprimorado e personalizado de acordo com suas necessidades.
 - Você pode adicionar mais métodos de validação para fortalecer a criação de senhas.
