@@ -1,3 +1,8 @@
+  // Open/close modal
+document.getElementById('openBtn').onclick = () => document.getElementById('divBackground').style.display = 'block'
+document.getElementById('closeBtn').onclick = () => document.getElementById('divBackground').style.display = 'none'
+ 
+
  // Chamando função main com elemento que queremos tornar arrastavel como parametro
  mainFunction(document.getElementById("conteudo"))
 
